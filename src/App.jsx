@@ -132,7 +132,12 @@ class HeroCard extends React.Component {
     return (
       <div className="hero-card">
         <img src={hero.url} alt={hero.name} />
-        <h3>{hero.name}</h3>
+        <h2>{hero.name}</h2>
+          <p><strong>Вселенная:</strong>{hero.universe}</p>
+          <p><strong>Альтер эго:</strong>{hero.alterego}</p>
+          <p><strong>Род занятий:</strong>{hero.occupation}</p>
+          <p><strong>Друзья:</strong>{hero.friends}</p>
+          <p><strong>Суперспособности:</strong>{hero.superpowers}</p>
         <p>{hero.info}</p>
         <div className="rating">
           {this.renderStars()}
